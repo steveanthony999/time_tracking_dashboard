@@ -17,4 +17,5 @@ code {
 :root {
   --bg-color: hsl(226, 43%, 10%);
   --card-bg-dark-blue: hsl(235, 46%, 20%);
+  --soft-orange: hsl(43, 84%, 65%);
 }
