@@ -11,7 +11,7 @@ function App() {
         <div className='item'>
           <Card
             cardColor='var(--card-blue)'
-            cardHeight='65%'
+            cardHeight='70%'
             cardTop='0px'
             cardBgColor='var(--card-dark-blue)'
             cardBgHeight='500px'
@@ -24,7 +24,7 @@ function App() {
             <div>{i.timeframes.weekly.previous}hrs</div> */}
             <Card
               cardColor='var(--card-dark-blue)'
-              cardHeight='193px'
+              cardHeight='185px'
               cardTop='50px'
               cardBgColor='var(--card-blue)'
               cardBgHeight='100px'
