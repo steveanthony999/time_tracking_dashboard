@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import CardBackground from './CardBackground';
 
 const StyledCard = styled.div`
-  width: 200px;
+  width: 100%;
   height: ${(props) => props.cardHeight};
   background-color: ${(props) => props.cardColor};
   border-radius: 15px;
@@ -13,10 +13,16 @@ const StyledCard = styled.div`
   top: ${(props) => props.cardTop};
 `;
 
-const Card = ({ cardColor, cardHeight, cardBgColor, cardTop }) => {
+const Card = ({
+  cardColor,
+  cardHeight,
+  cardBgColor,
+  cardTop,
+  cardBgHeight,
+}) => {
   return (
     <div className='card-container'>
-      <CardBackground cardBgColor={cardBgColor} cardBgHeight='199px' />
+      <CardBackground cardBgColor={cardBgColor} cardBgHeight={cardBgHeight} />
       <StyledCard
         cardColor={cardColor}
         cardHeight={cardHeight}

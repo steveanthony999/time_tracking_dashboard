@@ -17,6 +17,7 @@
 
 .item {
   background-color: rgba(255, 0, 0, 0.5);
+  position: relative;
 }
 
 .item:first-child {
