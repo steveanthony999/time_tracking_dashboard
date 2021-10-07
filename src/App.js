@@ -18,7 +18,7 @@ function App() {
           />
         </div>
         {data.map((i) => (
-          <div className='item'>
+          <div className='item' key={i.id}>
             {/* <div>{i.title}</div>
             <div>{i.timeframes.weekly.current}hrs</div>
             <div>{i.timeframes.weekly.previous}hrs</div> */}
