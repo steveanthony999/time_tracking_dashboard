@@ -10,14 +10,18 @@ const StyledCard = styled.div`
   background-color: ${(props) => props.cardColor};
   border-radius: 15px;
   position: absolute;
-  top: 50px;
+  top: ${(props) => props.cardTop};
 `;
 
-const Card = ({ cardColor, cardHeight, cardBgColor }) => {
+const Card = ({ cardColor, cardHeight, cardBgColor, cardTop }) => {
   return (
     <div className='card-container'>
-      <CardBackground cardBgColor={cardBgColor} cardBgHeight='100px' />
-      <StyledCard cardColor={cardColor} cardHeight={cardHeight} />
+      <CardBackground cardBgColor={cardBgColor} cardBgHeight='199px' />
+      <StyledCard
+        cardColor={cardColor}
+        cardHeight={cardHeight}
+        cardTop={cardTop}
+      />
     </div>
   );
 };

@@ -7,7 +7,16 @@
   align-items: center;
 }
 
+.container {
+  display: flex;
+}
+
+.container-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .card-container {
   position: relative;
-  margin: 1rem;
+  margin: 0.75rem;
 }
