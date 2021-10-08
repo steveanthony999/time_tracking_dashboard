@@ -10,11 +10,11 @@ function App() {
       <div className='container'>
         <div className='item'>
           <Card
-            cardColor='var(--card-blue)'
+            cardColor='var(--blue)'
             cardHeight='70%'
             cardTop='0px'
-            cardBgColor='var(--card-dark-blue)'
-            cardBgHeight='500px'
+            cardBgColor='var(--dark-blue)'
+            cardBgHeight='518px'
           />
         </div>
         {data.map((i) => (
@@ -23,10 +23,10 @@ function App() {
             <div>{i.timeframes.weekly.current}hrs</div>
             <div>{i.timeframes.weekly.previous}hrs</div> */}
             <Card
-              cardColor='var(--card-dark-blue)'
-              cardHeight='185px'
-              cardTop='50px'
-              cardBgColor='var(--card-blue)'
+              cardColor='var(--dark-blue)'
+              cardHeight='199px'
+              cardTop='45px'
+              cardBgColor={i.bgColor}
               cardBgHeight='100px'
             />
           </div>

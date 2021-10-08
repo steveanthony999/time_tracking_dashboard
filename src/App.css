@@ -1,7 +1,7 @@
 #app {
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg-color);
+  background-color: var(--very-dark-blue);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .item {
-  /* background-color: rgba(255, 0, 0, 0.5); */
+  width: 255px;
   position: relative;
 }
 

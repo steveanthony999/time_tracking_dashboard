@@ -16,6 +16,7 @@ const data = [
         previous: 128,
       },
     },
+    bgColor: 'var(--light-red-orange)',
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ const data = [
         previous: 29,
       },
     },
+    bgColor: 'var(--soft-blue)',
   },
   {
     id: 3,
@@ -52,6 +54,7 @@ const data = [
         previous: 19,
       },
     },
+    bgColor: 'var(--light-red)',
   },
   {
     id: 4,
@@ -70,6 +73,7 @@ const data = [
         previous: 18,
       },
     },
+    bgColor: 'var(--lime-green)',
   },
   {
     id: 5,
@@ -88,6 +92,7 @@ const data = [
         previous: 23,
       },
     },
+    bgColor: 'var(--violet)',
   },
   {
     id: 6,
@@ -106,6 +111,7 @@ const data = [
         previous: 11,
       },
     },
+    bgColor: 'var(--soft-orange)',
   },
 ];
 
