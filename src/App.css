@@ -8,8 +8,8 @@
 }
 
 .container {
-  width: 1100px;
-  height: 500px;
+  width: 1110px;
+  height: 518px;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
