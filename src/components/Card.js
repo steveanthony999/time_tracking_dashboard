@@ -11,6 +11,7 @@ const StyledCard = styled.div`
   border-radius: 15px;
   position: absolute;
   top: ${(props) => props.cardTop};
+  z-index: 2;
 `;
 
 const Card = ({

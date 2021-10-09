@@ -24,3 +24,23 @@
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
+.icon {
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+}
+
+.item:nth-child(5) .icon {
+  top: -5px;
+}
+
+.item:nth-child(6) .icon {
+  clip-path: none;
+  top: 0;
+}
+
+.item:nth-child(7) .icon {
+  top: -6px;
+}
