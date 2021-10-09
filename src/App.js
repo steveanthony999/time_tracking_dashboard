@@ -8,6 +8,7 @@ import IconStudy from './images/icon-study.svg';
 import IconExercise from './images/icon-exercise.svg';
 import IconSocial from './images/icon-social.svg';
 import IconSelfCare from './images/icon-self-care.svg';
+import ProfilePic from './images/image-jeremy.png';
 
 import './App.css';
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <div id='app'>
       <div className='container'>
-        <div className='item'>
+        <div className='item profile'>
           <Card
             cardColor='var(--blue)'
             cardHeight='70%'
@@ -23,6 +24,13 @@ function App() {
             cardBgColor='var(--dark-blue)'
             cardBgHeight='518px'
           />
+          <div className='profile-container'>
+            <img src={ProfilePic} alt='profile' />
+            <div className='profile-info'>
+              <p>Report for</p>
+              <h4>Jeremy Robson</h4>
+            </div>
+          </div>
         </div>
         {data.map((i) => (
           <div className='item' key={i.id}>
