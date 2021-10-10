@@ -19,7 +19,7 @@ function App() {
         <div className='item profile'>
           <Card
             cardColor='var(--blue)'
-            cardHeight='70%'
+            cardHeight='69%'
             cardTop='0px'
             cardBgColor='var(--dark-blue)'
             cardBgHeight='518px'
@@ -29,6 +29,12 @@ function App() {
             <div className='profile-info'>
               <p>Report for</p>
               <h4>Jeremy Robson</h4>
+            </div>
+            <div className='time-frame-container'>
+              <div></div>
+              <p>Daily</p>
+              <p className='active'>Weekly</p>
+              <p>Monthly</p>
             </div>
           </div>
         </div>
