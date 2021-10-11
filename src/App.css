@@ -46,14 +46,6 @@
 }
 
 .profile-container {
-  /* height: 300px;
-  position: absolute;
-  top: 0;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 100; */
   height: 100%;
   position: absolute;
   top: 0;
@@ -107,4 +99,15 @@
 
 .time-frame-container .active {
   color: white;
+}
+
+.info-container {
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
 }

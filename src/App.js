@@ -40,9 +40,6 @@ function App() {
         </div>
         {data.map((i) => (
           <div className='item' key={i.id}>
-            {/* <div>{i.title}</div>
-            <div>{i.timeframes.weekly.current}hrs</div>
-            <div>{i.timeframes.weekly.previous}hrs</div> */}
             <Card
               cardColor='var(--dark-blue)'
               cardHeight='199px'
@@ -67,10 +64,18 @@ function App() {
               alt='icon'
               className='icon'
             />
+            <div className='info-container'>
+              <div className='info-title-bar'>
+                <div>{i.title}</div>
+              </div>
+              <div className='info-content'>
+                <div>{i.timeframes.weekly.current}hrs</div>
+                <div>{i.timeframes.weekly.previous}hrs</div>
+              </div>
+            </div>
           </div>
         ))}
       </div>
-      {/* </div> */}
     </div>
   );
 }
