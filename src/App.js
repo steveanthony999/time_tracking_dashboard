@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import Card from './components/Card';
 import data from './data';
 
@@ -66,7 +68,8 @@ function App() {
             />
             <div className='info-container'>
               <div className='info-title-bar'>
-                <div>{i.title}</div>
+                <p>{i.title}</p>
+                <FontAwesomeIcon icon={faEllipsisH} />
               </div>
               <div className='info-content'>
                 <div>{i.timeframes.weekly.current}hrs</div>
