@@ -69,7 +69,7 @@ function App() {
             <div className='info-container'>
               <div className='info-title-bar'>
                 <p>{i.title}</p>
-                <FontAwesomeIcon icon={faEllipsisH} />
+                <FontAwesomeIcon icon={faEllipsisH} color='#BBC0FF' />
               </div>
               <div className='info-content'>
                 <h4>{i.timeframes.weekly.current}hrs</h4>
