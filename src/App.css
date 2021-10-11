@@ -103,14 +103,14 @@
 
 .info-container {
   width: 100%;
-  height: 100%;
+  height: 110%;
   color: white;
   position: absolute;
-  top: 20px;
+  top: 10px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   z-index: 100;
 }
 
@@ -119,4 +119,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.info-title-bar p {
+  font-size: 18px;
+}
+
+.info-content h4 {
+  font-size: 56px;
+  font-weight: 300;
+}
+
+.info-content p {
+  font-size: 15px;
+  color: #bbc0ff;
 }

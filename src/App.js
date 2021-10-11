@@ -72,8 +72,8 @@ function App() {
                 <FontAwesomeIcon icon={faEllipsisH} />
               </div>
               <div className='info-content'>
-                <div>{i.timeframes.weekly.current}hrs</div>
-                <div>{i.timeframes.weekly.previous}hrs</div>
+                <h4>{i.timeframes.weekly.current}hrs</h4>
+                <p>Last Week - {i.timeframes.weekly.previous}hrs</p>
               </div>
             </div>
           </div>
