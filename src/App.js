@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import Card from './components/Card';
@@ -15,6 +15,12 @@ import ProfilePic from './images/image-jeremy.png';
 import './App.css';
 
 function App() {
+  const [timeFrame, setTimeFrame] = useState('weekly');
+
+  useEffect(() => {
+    console.log(timeFrame);
+  }, [timeFrame]);
+
   return (
     <div id='app'>
       <div className='container'>
@@ -34,9 +40,21 @@ function App() {
             </div>
             <div className='time-frame-container'>
               <div></div>
-              <p>Daily</p>
-              <p className='active'>Weekly</p>
-              <p>Monthly</p>
+              <p
+                className={timeFrame === 'daily' ? 'active' : ''}
+                onClick={() => setTimeFrame('daily')}>
+                Daily
+              </p>
+              <p
+                className={timeFrame === 'weekly' ? 'active' : ''}
+                onClick={() => setTimeFrame('weekly')}>
+                Weekly
+              </p>
+              <p
+                className={timeFrame === 'monthly' ? 'active' : ''}
+                onClick={() => setTimeFrame('monthly')}>
+                Monthly
+              </p>
             </div>
           </div>
         </div>
@@ -72,8 +90,23 @@ function App() {
                 <FontAwesomeIcon icon={faEllipsisH} color='#BBC0FF' />
               </div>
               <div className='info-content'>
-                <h4>{i.timeframes.weekly.current}hrs</h4>
-                <p>Last Week - {i.timeframes.weekly.previous}hrs</p>
+                <h4>
+                  {timeFrame === 'daily'
+                    ? i.timeframes.daily.current
+                    : timeFrame === 'weekly'
+                    ? i.timeframes.weekly.current
+                    : timeFrame === 'monthly' && i.timeframes.monthly.current}
+                  hrs
+                </h4>
+                <p>
+                  Last Week -{' '}
+                  {timeFrame === 'daily'
+                    ? i.timeframes.daily.previous
+                    : timeFrame === 'weekly'
+                    ? i.timeframes.weekly.previous
+                    : timeFrame === 'monthly' && i.timeframes.monthly.previous}
+                  hrs
+                </p>
               </div>
             </div>
           </div>
