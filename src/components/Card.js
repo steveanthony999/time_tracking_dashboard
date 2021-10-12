@@ -12,6 +12,11 @@ const StyledCard = styled.div`
   position: absolute;
   top: ${(props) => props.cardTop};
   z-index: 2;
+
+  &:hover {
+    background: #33397a;
+    cursor: pointer;
+  }
 `;
 
 const Card = ({

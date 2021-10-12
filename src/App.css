@@ -132,6 +132,15 @@
   font-size: 18px;
 }
 
+.info-title-bar svg {
+  transition: 0.2s;
+}
+
+.info-title-bar svg:hover {
+  cursor: pointer;
+  color: white;
+}
+
 .info-content h4 {
   font-size: 56px;
   font-weight: 300;

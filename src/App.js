@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import { useMediaQuery } from 'react-responsive';
@@ -21,13 +21,10 @@ function App() {
     query: '(max-width: 840px)',
   });
 
-  useEffect(() => {
-    console.log(timeFrame);
-  }, [timeFrame]);
-
   return (
     <div id='app'>
       <div className='container'>
+        {/* PROFILE CARD */}
         <div className='item'>
           <Card
             cardColor='var(--blue)'
@@ -69,11 +66,11 @@ function App() {
             </div>
           </div>
         </div>
+        {/* INFO CARDS */}
         {data.map((i) => (
           <div className='item' key={i.id}>
             <Card
               cardColor='var(--dark-blue)'
-              cardHeight='199px'
               cardHeight={isMobile ? '122px' : '199px'}
               cardTop='45px'
               cardBgColor={i.bgColor}
@@ -99,7 +96,11 @@ function App() {
             <div className='info-container'>
               <div className='info-title-bar'>
                 <p>{i.title}</p>
-                <FontAwesomeIcon icon={faEllipsisH} color='#BBC0FF' />
+                <FontAwesomeIcon
+                  icon={faEllipsisH}
+                  color='#BBC0FF'
+                  onClick={() => console.log('#ShashiGang')}
+                />
               </div>
               <div className='info-content'>
                 <h4>
