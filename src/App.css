@@ -56,6 +56,13 @@
   z-index: 100;
 }
 
+.profile-upper {
+  height: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .profile-info {
   margin-top: -3rem;
 }
@@ -133,4 +140,106 @@
 .info-content p {
   font-size: 15px;
   color: #bbc0ff;
+}
+
+@media screen and (min-width: 840px) and (max-width: 1100px) {
+  body {
+    background-color: var(--very-dark-blue);
+  }
+
+  #app {
+    margin-top: -6rem;
+  }
+
+  .container {
+    max-width: 840px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item:nth-child(6) .info-container {
+    height: 270px;
+  }
+
+  .item:last-child .info-container {
+    height: 270px;
+  }
+}
+
+@media screen and (max-height: 710px) {
+  #app {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  body {
+    background-color: var(--very-dark-blue);
+  }
+
+  #app {
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .item {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .item:first-child {
+    margin-top: -4rem;
+  }
+
+  .item:nth-child(2) {
+    margin-top: 2rem;
+  }
+
+  .card-container {
+    height: 200px;
+  }
+
+  .profile-container .profile-upper img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .profile-upper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile-info {
+    margin: 0px 0px 0px 10px;
+  }
+
+  .time-frame-container {
+    height: 10px;
+    flex-direction: row;
+  }
+
+  .profile-container h4 {
+    font-size: 24px;
+  }
+
+  .info-container {
+    height: 70%;
+    top: 2rem;
+    justify-content: space-around;
+  }
+
+  .info-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info-content h4 {
+    font-size: 32px;
+  }
 }
